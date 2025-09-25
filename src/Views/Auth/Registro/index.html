@@ -1,0 +1,40 @@
+<header class="header">
+    <div class="header__logo">
+        <img src="public/logo.png">
+        <div class="header__rayita"></div>
+        <label>Sistema de Biblioteca</label>
+    </div>
+    <div class="header__opciones">
+        <a id="botonAsistencia" class="header__boton">Usuarios</a>
+        <a id="botonLogeo" class="header__boton">Administradores</a>
+    </div>
+</header>
+<div class="tituloForm">Registro de Usuario</div>
+<form class="formDoble">
+    <div class="form__contenido">
+        <label class="form__subtitulo">Rol del Usuario:</label>
+        <select id="rol" class="form__input">
+            <option hidden>Seleccione un Rol</option>
+            <option>Aprendiz</option>
+            <option>Sala de Lectura</option>
+            <option>Feria de Libro</option>
+        </select>
+    </div>
+    <div class="form__contenido">
+        <label class="form__subtitulo">Documento:</label>
+        <input class="form__input" type="text" placeholder="Ingrese el Documento">
+    </div>
+    <div class="form__contenido">
+        <label class="form__subtitulo">Nombres:</label>
+        <input class="form__input" type="text" placeholder="Ingrese sus nombres">
+    </div>
+    <div class="form__contenido">
+        <label class="form__subtitulo">Apellidos:</label>
+        <input class="form__input" type="password" placeholder="Ingrese sus apellidos">
+    </div>
+    <div id="contenedorficha" class="form__contenido">
+        <label class="form__subtitulo">Ficha de Formacion:</label>
+        <input class="form__input" type="text" placeholder="Ficha de Formacion">
+    </div>
+    <button id="boton" class="form__boton">Registrarse</button>
+</form>

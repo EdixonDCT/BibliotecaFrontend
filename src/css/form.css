@@ -1,10 +1,3 @@
-.main {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-palido);
-    font-family: var(--fuente-normal);
-}
-
 .header {
     display: flex;
     width: 100%;
@@ -51,6 +44,7 @@
     height: 70%;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .header__boton--activo {
@@ -68,7 +62,7 @@
     margin-right: 10px;
 }
 
-.tituloForm{
+.tituloForm {
     font-weight: bold;
     background-color: var(--color-gris);
     font-size: var(--tamano-mediano);
@@ -96,6 +90,7 @@
     font-size: var(--tamano-mediano);
     color: var(--color-oscuro);
 }
+
 .form__input {
     width: 100%;
     margin: 10px auto;
@@ -118,14 +113,15 @@
     font-size: var(--tamano-mediano);
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
-.form__boton:hover{
+.form__boton:hover {
     background-color: #007832;
     transform: scale(1.1);
 }
 
-.form__pregunta{
+.form__pregunta {
     display: flex;
     justify-content: center;
     font-size: var(--tamano-pequeno);
@@ -138,4 +134,26 @@
     color: var(--color-verde);
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.formDoble {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    margin: 0px auto;
+    border: solid 5px var(--color-gris);
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    gap: 5px;
+}
+
+.formDoble>button {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+#app:has(.formDoble)>.tituloForm {
+    width: 50%;
 }

@@ -1,46 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asistencia</title>
-    <link rel="icon" href="public/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="src/styles.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" href="public/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asistencia</title>
 </head>
-
 <body>
-    <main class="main">
-        <header class="header">
-            <div class="header__logo">
-                <img src="public/logo.png">
-                <div class="header__rayita"></div>
-                <label>Sistema de Biblioteca</label>
-            </div>
-            <div class="header__opciones">
-                <a class="header__boton header__boton--activo">Usuarios</a>
-                <a class="header__boton">Administradores</a>
-            </div>
-        </header>
-        <div class="tituloForm">Registrar Asistencia</div   >
-        <form class="form">
-            <div class="form__contenido">
-                <label class="form__subtitulo">Documento:</label>
-                <input class="form__input" type="text" placeholder="Ingrese el Documento">
-            </div>
-            <div class="form__contenido">
-                <label class="form__subtitulo">Motivo de Ingreso:</label>
-                <select class="form__input">
-                    <option>Sala de computo</option>
-                    <option>Sala de Lectura</option>
-                    <option>Feria de Libro</option>
-                </select>
-            </div>
-            <button class="form__boton">Registrar</button>
-            <label class="form__pregunta">¿No tienes cuenta?<a class="form__pregunta--link">Registrarse</a></label>
-        </form>
-        
-    </main>
+  <main id="app">
+  </main>
+  <script type="module" src="/src/main.js"></script>
 </body>
-
 </html>
