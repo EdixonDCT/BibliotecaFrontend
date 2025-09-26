@@ -1,6 +1,7 @@
 import * as Auth from '../Views/Auth/index.js';
+import PrincipalController from '../Views/Principal/PrincipalController.js'
 
-export const routes = { 
+export const routes = {
   Asistencia: {
     path: "Auth/Asistencia/index.html",
     controlador: Auth.AsistenciaController,
@@ -14,6 +15,11 @@ export const routes = {
   Registro: {
     path: "Auth/Registro/index.html",
     controlador: Auth.RegistroController,
-    private: false 
+    private: false
+  },
+  Principal: {
+    path: "Principal/index.html",
+    controlador: PrincipalController,
+    private: false
   }
 };

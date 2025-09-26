@@ -1,18 +1,25 @@
-import "./css/styles.css"; 
+import "./css/styles.css";
 import { router } from "./router/router.js";
-// import componenteHeader from "../src/componentes/header/index.html?raw";
-// import { componenteHeader as header } from "./componentes/header/header.js";
+import componenteSidebar from "../src/componentes/sidebar/index.html?raw";
+import { componenteSidebar as sidebar } from "./componentes/sidebar/sidebar.js";
 
-// document.querySelector("body").insertAdjacentHTML("afterbegin", componenteHeader);
-
-const main = document.querySelector("#app"); 
-
+const main = document.querySelector("#app");
 window.addEventListener("hashchange", async (e) => {
-//   header();
+  let sidebarValidarExiste = document.querySelector('.sidebar');
+  if (localStorage.length > 0 && !sidebarValidarExiste) {
+    document.querySelector("body").insertAdjacentHTML("afterbegin", componenteSidebar)
+  }
+  let sidebarValidarControlador = document.querySelector('.sidebar');
+  if (sidebarValidarControlador) sidebar();
   router(main);
 });
 
 window.addEventListener("DOMContentLoaded", async () => {
-//   header();
+  let sidebarValidarExiste = document.querySelector('.sidebar');
+  if (localStorage.length > 0 && !sidebarValidarExiste) {
+    document.querySelector("body").insertAdjacentHTML("afterbegin", componenteSidebar)
+  }
+  let sidebarValidarControlador = document.querySelector('.sidebar');
+  if (sidebarValidarControlador) sidebar();
   router(main);
 });
